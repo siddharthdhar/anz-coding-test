@@ -1,0 +1,4 @@
+node_modules/*
+.vscode/
+output/
+cucumber-html-result.html
