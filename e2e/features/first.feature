@@ -14,3 +14,6 @@ Feature: Borrowing Estimate Calculator
 			And enters "Total credit card limits as $10000"
 			And clicks "Work out how much I could borrow"
 		Then User sees a borrowing estimate of "$482,000"
+		And User clears the form
+		Then User sees a borrowing estimate of "$0"
+		

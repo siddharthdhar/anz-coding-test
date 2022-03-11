@@ -3,6 +3,7 @@ const scope = require('../step_definitions/support/scope')
 class BorrowingEstimatePage {
 
     borrowEstimate = '#borrowResultTextAmount';
+    startOver = '.start-over';
 
     borrowQuestionButtonsAndSelectors = function (text) {
         switch (text) {

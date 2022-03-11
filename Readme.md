@@ -19,20 +19,26 @@ $ nvm use node
 $ npm install
 ```
 
-3. Run the test on chromium (with HTML Report generation): 
+3. Run the test on chromium: 
 
 ```bash
 $ npm test
 ```
 
-4. Run the test on chrome (with HTML Report generation): 
+4. Run the test on chrome: 
 
 ```bash
 $ npm run test:chrome
 ```
 
-5. Run the test headless (with HTML Report generation): 
+5. Run the test headless: 
 
 ```bash
 $ npm run test:headless
+```
+
+6. Run the HTML Report: 
+
+```bash
+$ npm run report
 ```

@@ -4,9 +4,9 @@
   "description": "ANZ Test Framework",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=local ./node_modules/@cucumber/cucumber/bin/cucumber-js ./e2e/features -r ./e2e/step_definitions -f json:output/report/cucumber-report.json && npm run report",
-    "test:chrome": "NODE_ENV=chrome ./node_modules/@cucumber/cucumber/bin/cucumber-js ./e2e/features -r ./e2e/step_definitions -f json:output/report/cucumber-report.json && npm run report",
-    "test:headless": "NODE_ENV=headless ./node_modules/@cucumber/cucumber/bin/cucumber-js ./e2e/features -r ./e2e/step_definitions -f json:output/report/cucumber-report.json && npm run report",
+    "test": "NODE_ENV=local ./node_modules/@cucumber/cucumber/bin/cucumber-js ./e2e/features -r ./e2e/step_definitions -f json:output/report/cucumber-report.json",
+    "test:chrome": "NODE_ENV=chrome ./node_modules/@cucumber/cucumber/bin/cucumber-js ./e2e/features -r ./e2e/step_definitions -f json:output/report/cucumber-report.json",
+    "test:headless": "NODE_ENV=headless ./node_modules/@cucumber/cucumber/bin/cucumber-js ./e2e/features -r ./e2e/step_definitions -f json:output/report/cucumber-report.json",
     "report": "node report.js"
   },
   "author": "Sid Dhar",
