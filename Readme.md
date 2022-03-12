@@ -1,6 +1,6 @@
 # Introduction
 
-ANZ Coding Test:
+Coding Test:
 
 1. Create a Cucumber BDD, Puppeteer Framework
 2. 
