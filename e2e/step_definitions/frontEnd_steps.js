@@ -56,4 +56,4 @@ Then(/^User sees a borrowing estimate of "([^"]*)"/, async(text) => {
 
 Given(/^User clears the form/, async() => {
     await scope.page.click(borrowerEstimatePage.startOver);
-})
+});
