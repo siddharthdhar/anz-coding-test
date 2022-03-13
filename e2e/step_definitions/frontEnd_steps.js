@@ -4,10 +4,10 @@ const { setDefaultTimeout } = require('@cucumber/cucumber');
 const scope = require('./support/scope');
 const constants = require('./support/constants');
 const _ = require('lodash');
-const borrowerEstimate = require ('../pageObject/borrowEstimatePage');
+const borrowerEstimate = require ('../pages/borrowEstimatePage');
 const assert = require('assert')
 
-const THIRTY_SECONDS = 30 * 1000; // default
+const THIRTY_SECONDS = 30 * 1000;
 setDefaultTimeout(THIRTY_SECONDS);
 
 const borrowerEstimatePage = new borrowerEstimate();
