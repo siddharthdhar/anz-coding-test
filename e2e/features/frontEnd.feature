@@ -1,3 +1,4 @@
+@web
 Feature: Borrowing Estimate Calculator
 
 	Scenario: Verify Borrowing Estimate

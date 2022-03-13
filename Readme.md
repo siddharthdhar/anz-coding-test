@@ -2,8 +2,8 @@
 
 Coding Test:
 
-1. Create a Cucumber BDD, Puppeteer Framework
-2. 
+1. Create a Cucumber BDD, Puppeteer Framework to test in Web Browser
+2. Create a Cucumber BDD, Axios framework to test APIs
 
 ## Installing
 
@@ -19,7 +19,7 @@ $ nvm use node
 $ npm install
 ```
 
-3. Run the test on chromium: 
+3. Run API and Web tests (Tests will run in headless mode by default):
 
 ```bash
 $ npm test
@@ -31,13 +31,19 @@ $ npm test
 $ npm run test:chrome
 ```
 
-5. Run the test headless: 
+5. Run only Web based tests:
 
 ```bash
-$ npm run test:headless
+$ npm run test:web
 ```
 
-6. Run the HTML Report: 
+6. Run only API based tests:
+
+```bash
+$ npm run test:api
+```
+
+7. Run the HTML Report:
 
 ```bash
 $ npm run report
