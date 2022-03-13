@@ -43,8 +43,15 @@ $ npm run test:web
 $ npm run test:api
 ```
 
-7. Run the HTML Report:
+7. Run the **HTML Report**:
 
 ```bash
 $ npm run report
 ```
+
+8. Results can be located at the Root Folder under the name *cucumber-html-result.html*
+
+9. Please provide neccessary folder permissions if required to create the JSON and HTML Files which support report generation.
+
+
+10. IMPORTANT: The framework and setup could not be tested on a Windows machine due to lack of windows machine. Please setup and run on a MAC OS if possible
