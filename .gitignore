@@ -1,6 +1,9 @@
 node_modules/*
 .vscode/
-output/report/*.*
-output/screenshots/
+output/screenshots/*.png
+output/report/*.html
+output/report/*.json
+output/results.json
+output/current-run.json
 output/report-config.json
 cucumber-html-result.html
