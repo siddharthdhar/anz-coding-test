@@ -49,7 +49,7 @@ $ npm run test:api
 $ npm run report
 ```
 
-8. Results can be located at the Root Folder under the name *cucumber-html-result.html*
+8. Results can be located at the Root Folder under the name ***cucumber-html-result.html***
 
 9. Please provide neccessary folder permissions if required to create the JSON and HTML Files which support report generation.
 
