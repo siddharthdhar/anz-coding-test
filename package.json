@@ -4,16 +4,17 @@
   "description": "Coding Test Framework",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=headless ./node_modules/@cucumber/cucumber/bin/cucumber-js ./e2e/features -r ./e2e/step_definitions -f json:output/report/cucumber-report.json",
-    "test:chrome": "NODE_ENV=chrome ./node_modules/@cucumber/cucumber/bin/cucumber-js ./e2e/features --tags @web -r ./e2e/step_definitions -f json:output/report/cucumber-report.json",
-    "test:api": "NODE_ENV=headless ./node_modules/@cucumber/cucumber/bin/cucumber-js ./e2e/features --tags @api -r ./e2e/step_definitions -f json:output/report/cucumber-report.json",
-    "test:web": "NODE_ENV=local ./node_modules/@cucumber/cucumber/bin/cucumber-js ./e2e/features --tags @web -r ./e2e/step_definitions -f json:output/report/cucumber-report.json",
+    "test": "NODE_ENV=headless ./node_modules/@cucumber/cucumber/bin/cucumber-js ./e2e/features -r ./e2e/step_definitions -f @cucumber/pretty-formatter  -f json:output/report/cucumber-report.json",
+    "test:chrome": "NODE_ENV=chrome ./node_modules/@cucumber/cucumber/bin/cucumber-js ./e2e/features --tags @web -r ./e2e/step_definitions -f @cucumber/pretty-formatter -f json:output/report/cucumber-report.json",
+    "test:api": "NODE_ENV=headless ./node_modules/@cucumber/cucumber/bin/cucumber-js ./e2e/features --tags @api -r ./e2e/step_definitions -f @cucumber/pretty-formatter -f json:output/report/cucumber-report.json",
+    "test:web": "NODE_ENV=local ./node_modules/@cucumber/cucumber/bin/cucumber-js ./e2e/features --tags @web -r ./e2e/step_definitions -f @cucumber/pretty-formatter -f json:output/report/cucumber-report.json",
     "report": "node report.js"
   },
   "author": "Sid Dhar",
   "license": "ISC",
   "devDependencies": {
     "@cucumber/cucumber": "^7.3.2",
+    "@cucumber/pretty-formatter": "^1.0.0-alpha.1",
     "axios": "^0.26.1",
     "cucumber-html-reporter": "^5.5.0",
     "konfig": "^0.2.1",
