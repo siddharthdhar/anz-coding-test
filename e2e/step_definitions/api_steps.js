@@ -3,11 +3,16 @@ const assert = require('assert').strict
 const restHelper = require('./utils/restHelper')
 const apiKey = '71796ff0886fd85b4674a1bcd40d0db4'
 
-Given('A Request {} with {} and "{}" API key', async (request, headers, missingOrValid) => {
-    this.request = JSON.parse(request);
-    this.headers = JSON.parse(headers);
-    this.apiKey = missingOrValid.toLowerCase() === 'missing' ? '' : apiKey;
+Given(/^A Request$/, async (request) => {
+    return this.request = JSON.parse(request);
+});
 
+Given('headers: {}', async (headers) => {
+    return this.headers = JSON.parse(headers);
+});
+
+Given('"{}" API key', async (missingOrValid) => {
+    return this.apiKey = missingOrValid.toLowerCase() === 'missing' ? '' : apiKey;
 });
 
 When('I send {} request to {}', async (method, url) => {
@@ -32,11 +37,11 @@ When('I send {} request to {}', async (method, url) => {
 });
 
 Then('I get a response code {int}', async (responseCode) => {
-    assert.equal(this.response.status, responseCode);
+    return assert.equal(this.response.status, responseCode);
 });
 
 Then('the error "{}"', async (errorMessage) => {
-    assert.equal(this.response.data.message, errorMessage);
+    return assert.equal(this.response.data.message, errorMessage);
 });
 
 Then ('the response body matches the request sent', async () => {
