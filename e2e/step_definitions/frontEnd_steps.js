@@ -3,7 +3,6 @@ const { Given, When, Then } = require('@cucumber/cucumber');
 const { setDefaultTimeout } = require('@cucumber/cucumber');
 const scope = require('./support/scope');
 const constants = require('./support/constants');
-const _ = require('lodash');
 const borrowerEstimate = require ('../pages/borrowEstimatePage');
 const assert = require('assert')
 
