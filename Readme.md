@@ -1,9 +1,9 @@
 # Introduction
 
-Coding Test:
+CucumberJS Puppeteer Axios Framework:
 
-1. Create a Cucumber BDD, Puppeteer Framework to test in Web Browser
-2. Create a Cucumber BDD, Axios framework to test APIs
+1. CucumberJS BDD, Puppeteer Framework to test in Web Browser
+2. CucumberJS BDD, Axios framework to test APIs
 
 ## Installing
 

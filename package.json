@@ -1,7 +1,7 @@
 {
-  "name": "coding-test",
+  "name": "cucumberjs-puppeteer-axios-framework",
   "version": "1.0.0",
-  "description": "Coding Test Framework",
+  "description": "BDD Framework to test Web and API",
   "main": "index.js",
   "scripts": {
     "test": "NODE_ENV=headless ./node_modules/@cucumber/cucumber/bin/cucumber-js ./e2e/features -r ./e2e/step_definitions -f @cucumber/pretty-formatter  -f json:output/report/cucumber-report.json",
