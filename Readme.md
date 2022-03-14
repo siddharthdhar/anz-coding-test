@@ -25,16 +25,16 @@ $ npm install
 $ npm test
 ```
 
-4. Run the test on chrome: 
-
-```bash
-$ npm run test:chrome
-```
-
-5. Run only Web based tests:
+4. Run only Web based tests:
 
 ```bash
 $ npm run test:web
+```
+
+5. Run only web based tests on chrome: 
+
+```bash
+$ npm run test:chrome
 ```
 
 6. Run only API based tests:
@@ -49,9 +49,8 @@ $ npm run test:api
 $ npm run report
 ```
 
-8. Results can be located at the Root Folder under the name ***cucumber-html-result.html***
+8. Results are located at the Root Folder under the name ***cucumber-html-result.html***
 
 9. Please provide neccessary folder permissions if required to create the JSON and HTML Files which support report generation.
-
 
 10. IMPORTANT: The framework and setup could not be tested on a Windows machine due to lack of windows machine. Please setup and run on a MAC OS if possible
